@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import millify from "millify";
 import { Link } from "react-router-dom";
 import { Card, Row, Col, Input } from "antd";
-
+import Loader from "./Loader";
 import { useGetCryptosQuery } from "../services/cryptoAPI";
 
 const Cryptocurrencies = ({ simplified }) => {
@@ -22,7 +22,7 @@ const Cryptocurrencies = ({ simplified }) => {
       );
       setCryptos(filteredData);
     } else {
-      return "Loading...";
+      return <Loader />;
     }
   }, [cryptosList, searchTerm]);
 
@@ -50,7 +50,11 @@ const Cryptocurrencies = ({ simplified }) => {
                 <Card
                   title={`${currency.rank}. ${currency.name}`}
                   extra={
-                    <img className="crypto-image" src={currency.iconUrl} />
+                    <img
+                      className="crypto-image"
+                      src={currency.iconUrl}
+                      alt="crypto"
+                    />
                   }
                   hoverable
                 >

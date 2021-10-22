@@ -5,7 +5,7 @@ import { useGetCryptoNewsQuery } from "../services/cryptoNewsAPI";
 import { useGetCryptosQuery } from "../services/cryptoAPI";
 
 const { Text, Title } = Typography;
-const { Options } = Select;
+const { Option } = Select;
 
 const demoImage =
   "http://coinrevolution.com/wp-content/uploads/2020/06/cryptonews.jpg";

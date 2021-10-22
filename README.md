@@ -1,5 +1,7 @@
 # React Cryptocurrency App
 
+![Cryptoverse](https://i.ibb.co/8gh5Jc8/image.png)
+
 This app is a platform has been created to overwatch cryptocurrency and get the latest updates about each and every on of the cryptos.
 
 _This up has been created using Javascript Mastery tutorial_
